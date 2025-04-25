@@ -1,0 +1,50 @@
+:root {
+	--sqHeight;
+	--sqWidth;
+	--limTop;
+	--limLeft;
+	--limHeight;
+	--limWidth;
+}
+
+body {
+	background: blue;
+}
+
+#box {
+	position: absolute;
+	background-color: black;
+	height: var(--sqHeight);
+	width: var(--sqWidth);
+	border-radius: 5px;
+	animation: squint infinite 4s;
+}
+
+#limit {
+	position: absolute;
+	background: white;
+	top: var(--limTop);
+	left: var(--limLeft);
+	width: var(--limWidth);
+	height: var(--limHeight);
+	border-radius: 5px
+}
+
+#slidder {
+	position: absolute;
+	width: 500 px;
+}
+
+@keyframe squint {
+	0% {
+		height: var(--sqHeight);
+	}
+
+	50% {
+		height: var(--sqHeight)/2;
+	}
+
+	100% {
+		eight: var(--sqHeight);
+	}
+}
