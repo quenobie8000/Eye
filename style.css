@@ -8,7 +8,8 @@
 }
 
 body {
-	background: blue;
+	background:blue;
+	/* cursor:none; */
 }
 
 #box {
@@ -27,7 +28,8 @@ body {
 	left: var(--limLeft);
 	width: var(--limWidth);
 	height: var(--limHeight);
-	border-radius: 5px
+	border-radius: 5px;
+	resize: both;
 }
 
 #slidder {
